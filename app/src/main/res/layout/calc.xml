@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.FitWindowsLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lET"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+
+        >
+
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edfirsnum"
+        android:hint="عدد اول را وارد کن"
+        android:inputType="number"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EdSecondnum"
+        android:hint="عدد دوم را وارد کن"
+        android:layout_toRightOf="@+id/Edfirsnum"
+        android:inputType="number"/>
+
+    </android.support.v7.widget.FitWindowsLinearLayout>
+
+    <android.support.v7.widget.FitWindowsLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Lb"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/bsum"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/bsub"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/bMul"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/bDiv"/>
+
+
+
+
+    </android.support.v7.widget.FitWindowsLinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:text="نتیجه محاسبه"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Lb"
+        android:layout_marginTop="30dp"
+
+         />
+
+    
+
+</RelativeLayout>
